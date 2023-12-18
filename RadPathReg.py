@@ -16,7 +16,6 @@ import SimpleITK as sitk
 import math
 import time
 import matplotlib.pyplot as plt
-import os
 
 ## ------------------------------------------------- Accept inputs -------------------------------------------------- ##
 
