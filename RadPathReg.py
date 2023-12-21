@@ -24,11 +24,8 @@ st.subheader("2D registration script of an MRI slice and a corresponding histopa
 st.write("Please upload the images to register:")
 
 fixed = st.file_uploader("Fixed T2-weighted MR image (3D image):")
-fixed_name = fixed.name
 fixed_mask = st.file_uploader("Binary fixed mask (Segmentation drawn on the 3D fixed image):")
-fixed_mask_name = fixed_mask.name
 moving = st.file_uploader("Moving histopathology image (2D image):")
-moving_name = moving.name
 path = st.text_input("Insert file path (e.g. /Users/username/Documents/folder/):", "")
 index_slice = st.slider("Index slice (number of the corresponding slice on MRI):", 0, 50, 10)
 angle = st.slider("Rotation angle (angle to rotate automated points in counterclockwise orientation):", 0, 360, 0)
@@ -37,7 +34,9 @@ preprocessing = st.checkbox("Apply preprocessing")
 ## ------------------------------------------------ Do registration ------------------------------------------------- ##
 
 if (fixed is not None)& (fixed_mask is not None)& (moving is not None)& (index_slice is not None)& (path is not None):
-
+    fixed_name = fixed.name
+    fixed_mask_name = fixed_mask.name
+    moving_name = moving.name
     if st.button("Start registration") == True:
         start_time = time.time()
         ## --------------------------------------- Convert 3D to 2D mask ---------------------------------------- ##
