@@ -4,6 +4,6 @@ itk           == 5.4rc2
 numpy         == 1.24.4
 scikit-image  == 0.20.0
 scipy         == 1.9.1
-opencv-python == 4.6.0.66
+opencv-python-headless == 4.8.1.78
 simpleitk     == 2.2.1
 matplotlib    == 3.7.1
