@@ -15,7 +15,7 @@ This repository includes the Python algorithm developed for multimodal 2D regist
 All files need to be provided on the same folder and need to be in NIfTI (.nii) and TIFF (.tif) formats, respectively for the MRI and histopathology images.
 
 ### Usage
-This algorithm was created to be run as a streamlit application. To do so, please access it on your browser as: https://radpath-app.streamlit.app/. Alternatively, you can download this repository and follow this steps:
+This algorithm was created to be run as a streamlit application.
 
 1) Install streamlit:
 `$ pip install streamlit`
